@@ -4,12 +4,12 @@ body{
     background-image: url(/assets/image/bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    padding-left: 100px;
 }
 
 header{
     width: 100%;
     height: 100px;
+    padding-left: 100px;
     align-content: center;
 }
 
@@ -23,7 +23,9 @@ header{
 }
 
 main{
+    margin-left: 25%;
     padding-top: 40px;
+
 }
 
 h1{
@@ -56,7 +58,7 @@ p{
     font-optical-sizing: auto;
     font-style: normal;
     font-weight: 200;
-    margin-bottom: 15px;
+    margin-bottom:20px;
     line-height: 1.3em
 }
 
@@ -69,6 +71,45 @@ ul{
     font-weight: 200;
     list-style: disc;
     margin-left: 20px;
-    line-height: 1.8em
+    line-height: 1.8em;
+    margin-bottom: 120px;
+}
 
+.article{
+    width: 500px;
+    height: 25px;
+    display: inline-flex;
+    margin-right: 50px;
+}
+
+.quadratino{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    display: inline-block;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.condizioni{
+    font-size: 16px;
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 200;
+    display: inline-block;
+}
+
+button{
+    width: 125px;
+    height: 45px;
+    background-color: #00ffff; 
+    box-shadow: 0px 0px 20px 12px rgba(0,255,255,0.4);
+    border: none;
+    font-size: 20px;
+    color: black;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 600;
 }

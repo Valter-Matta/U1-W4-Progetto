@@ -1,0 +1,63 @@
+body {
+  background-image: url(../image/bg.jpg);
+  background-repeat: no-repeat;
+  max-width: 1920px;
+  max-height: 1080px;
+  background-size: cover;
+}
+header img {
+  width: 20%;
+  padding-top: 4.8vw;
+  padding-left: 8.3vw;
+}
+main {
+    text-align: center;
+}
+h1{
+    font-family: 'Palanquin Dark', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: white;
+  font-size: 2.4em;
+  margin-bottom: 0.5em;
+}
+h2,h3 {
+    font-family: inter , sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  color: white;
+  font-size: 1.2em;
+}
+
+#star{
+    font-size: 35px;
+}
+#stelline{
+    margin-top: 2em;
+    margin-bottom: 4em;
+}
+footer {
+    text-align: center;
+}
+button{
+    border: none;
+    box-shadow: 1px 1px 15px 3px #00FFFF;
+    width: 10em;
+    height: 2.8em;
+    font-family: 'Palanquin Dark' , sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1em;
+    background-color: #00FFFF;
+    color:#0B113B;
+}
+input {
+    padding-left: 2em;
+    padding-bottom: 0.3em;
+    width: 42%;
+    margin-top: 3em;
+    margin-bottom: 3.5em;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1.5px solid #d20094;
+}

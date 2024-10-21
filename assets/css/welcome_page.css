@@ -1,5 +1,6 @@
 body{
     width: 100%;
+    height: auto;
     background-image: url(/assets/image/bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -26,7 +27,7 @@ main{
 }
 
 h1{
-    font-size: 5em;
+    font-size: 60px;
     color: white;
     font-family: "Outfit", sans-serif;
     font-optical-sizing: auto;
@@ -36,4 +37,38 @@ h1{
 .bold{
     font-weight: 800;
     margin-bottom: 40px;
+}
+
+h4{
+    font-size: 30px;
+    color: #C2128D;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+p{
+    font-size: 16px;
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 200;
+    margin-bottom: 15px;
+    line-height: 1.3em
+}
+
+ul{
+    font-size: 16px;
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 200;
+    list-style: disc;
+    margin-left: 20px;
+    line-height: 1.8em
+
 }

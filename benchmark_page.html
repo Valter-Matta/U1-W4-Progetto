@@ -12,8 +12,18 @@
       <img src="/assets/image/epicode_logo.png" alt="logo_epicode" />
     </header>
     <main>
-      <!-- <div id="container-timer"></div> -->
-       <h1></h1>
+      <div id="container-timer">
+        <svg class="progress-ring" width="120" height="120">
+          <circle class="progress-ring-background" r="50" cx="60" cy="60" />
+          <circle class="progress-ring-circle" r="50" cx="60" cy="60" />
+        </svg>
+        <p id="Timer" class="timer-text">
+          <span id="rimanenti">Secondi</span>
+          <span id="seconds">100</span>
+          <span id="rimanenti">rimanenti</span>
+        </p>
+      </div>
+      <h1></h1>
       <section id="domande"></section>
     </main>
     <script src="/scripts/benchmark_page.js"></script>

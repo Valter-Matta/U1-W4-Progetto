@@ -26,6 +26,61 @@ main {
   text-align: center;
 }
 
+#container-timer {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 10%;
+  transform: translate(0, -100%);
+}
+
+.progress-ring {
+  position: relative;
+}
+
+.progress-ring-background {
+  stroke: rgba(231, 231, 231, 0.438);
+  stroke-width: 10;
+  fill: transparent;
+}
+
+.progress-ring-circle {
+  stroke: var(--colore-accent_color);
+  stroke-width: 12;
+  fill: transparent;
+  transition: stroke-dashoffset 1s linear;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+}
+
+#Timer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.timer-text {
+  text-align: center;
+  color: white;
+}
+
+.timer-text span {
+  display: block;
+}
+
+#rimanenti {
+  font-size: 10px;
+}
+
+main div p {
+  font-family: "Outfit", sans-serif;
+  font-size: 250%;
+}
+
 section {
   font-family: "Outfit", sans-serif;
   margin-bottom: 2.5vw;
@@ -39,7 +94,6 @@ section h1 {
 }
 
 #div-questions {
-  /* background-color: brown; */
   margin-left: 25%;
   margin-right: 25%;
   margin-top: 4.5vw;
@@ -73,7 +127,8 @@ section h1 {
   top: 1px;
 }
 
-#next_button {
+#next_button,
+#result_button {
   margin-top: 2.5vw;
   font-size: 150%;
   font-family: "Outfit", sans-serif;

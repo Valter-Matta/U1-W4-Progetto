@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+:root {
+  --colore-accent_color: #00ffff;
+  --colore-answer_button: #d20094;
+  --colore-answer_button_hover: #900080;
+}
+
+body {
+  background-image: url("/assets/image/bg.jpg");
+  background-repeat: no-repeat;
+  max-width: 1920px;
+  max-height: 1080px;
+  background-size: cover;
+  color: white;
+}
+
+header img {
+  width: 15%;
+  padding-top: 2.5vw;
+  padding-left: 8.5vw;
+}
+
+main {
+  text-align: center;
+}
+
+section {
+  font-family: "Outfit", sans-serif;
+  margin-bottom: 2.5vw;
+}
+
+section h1 {
+  margin-left: 16.5%;
+  margin-right: 17.5%;
+  margin-top: 5%;
+  font-size: 320%;
+}
+
+#div-questions {
+  /* background-color: brown; */
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 4.5vw;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.button_domande {
+  box-shadow: 1px 2px 7px 1px #dfe2eb;
+  background-color: transparent;
+  border-radius: 30px;
+  border: 1px solid #edf1fc;
+  cursor: pointer;
+  color: #ffffff;
+  padding: 12px 32px;
+  text-decoration: none;
+  text-shadow: 0px 1px 10px #cfd1d6;
+  width: 25rem;
+  font-size: 200%;
+  font-family: "Outfit", sans-serif;
+  margin: 15px;
+}
+
+.button_domande:hover {
+  background-color: transparent;
+}
+.button_domande:active {
+  position: relative;
+  top: 1px;
+}
+
+#next_button {
+  margin-top: 2.5vw;
+  font-size: 150%;
+  font-family: "Outfit", sans-serif;
+
+  box-shadow: 0px 2px 0px 0px #f2f2f2;
+  background-color: transparent;
+  border-radius: 17px;
+  border: 1px solid #ebebeb;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 16px 31px;
+  text-decoration: none;
+  text-shadow: -5px 2px 11px #ebebeb;
+}
+
+.next_button:hover {
+  background-color: transparent;
+}
+.next_button:active {
+  position: relative;
+  top: 1px;
+}
+
+.selected_button_domande {
+  color: var(--colore-answer_button);
+}
+
+section p {
+  font-size: 150%;
+  margin-top: 4vw;
+}
+
+#finish {
+  line-height: 10;
+  align-items: center;
+}

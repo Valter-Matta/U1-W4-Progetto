@@ -12,3 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   })
 })
+
+bottone.addEventListener('click', function () {
+  window.location.href = './benchmark_page.html'
+})

@@ -224,11 +224,20 @@ let costruttore_domande = function (indice) {
     div_questions.appendChild(button);
   }
 
-  section_html_domande.appendChild(div_questions);
+  for (let j = 0; j < all_answers.length; j++) {
+    let button = document.createElement("button");
+    button.classList.add("button_domande");
+    button.addEventListener("click", () => {
+      deselezione_button();
+      button.classList.add("selected_button_domande");
+      selected_aswer = all_answers[j];
+    });
+    button.textContent = `${all_answers[j]}`;
+    buttons.push(button);
+    div_questions.appendChild(button);
+  }
 
-  const next_button = document.createElement("button");
-  next_button.id = "next_button";
-  next_button.textContent = "NEXT";
+  section_html_domande.appendChild(div_questions);
 
   next_button.addEventListener("click", () => {
     mostra_risultato();
@@ -237,6 +246,11 @@ let costruttore_domande = function (indice) {
       clearInterval(interval);
       costruttore_domande(indice + 1);
     }, 1000);
+  });
+
+  next_button.addEventListener("click", () => {
+    user_answer.push(selected_aswer);
+    costruttore_domande(indice + 1);
   });
 
   section_html_domande.appendChild(next_button);

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 body {
   background-image: url(../image/bg.jpg);
   background-repeat: no-repeat;
@@ -6,31 +7,47 @@ body {
   background-size: cover;
 }
 header img {
-  width: 20%;
-  padding-top: 4.8vw;
-  padding-left: 8.3vw;
-}
+  width: 10%;
+  padding-top: 3vw;
+  padding-left: 19vw;
+  margin-bottom: 3em;}
 main {
     text-align: center;
 }
 h1{
-    font-family: 'Palanquin Dark', sans-serif;
+    font-family: outfit , sans-serif;
   font-weight: 500;
   font-style: normal;
   color: white;
   font-size: 2.4em;
   margin-bottom: 0.5em;
 }
-h2,h3 {
+h2,h3{
     font-family: inter , sans-serif;
   font-weight: 100;
   font-style: normal;
   color: white;
   font-size: 1.2em;
 }
-
-#star{
+p {
+  font-family: inter , sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  color: white;
+  font-size: 1.2em;
+  margin-top: 0.3em;
+}
+.star{
     font-size: 35px;
+    transition: color 0.2s ease;
+    
+}
+.star:hover {
+  color: #00FFFF;
+}
+.attiva {
+  color: #00FFFF;
+  transition: color 1s ease;
 }
 #stelline{
     margin-top: 2em;
@@ -60,4 +77,5 @@ input {
     background-color: transparent;
     border: none;
     border-bottom: 1.5px solid #d20094;
+    color: #d20094;
 }

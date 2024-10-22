@@ -1,12 +1,7 @@
 /* // <uniquifier>: Use a unique and descriptive class name */
 /* // <weight>: Use a value from 100 to 900 */
 
-.inter {
-  font-family: 'Inter', sans-serif;
-  font-optical-sizing: auto;
-  font-weight: weight;
-  font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Palanquin+Dark:wght@400;500;600;700&display=swap');
 
 body {
   font-family: 'Inter', sans-serif;
@@ -33,6 +28,7 @@ header img {
   padding-left: 3vw;
 }
 #title-container {
+  font-family: 'Outfit', sans-serif;
   text-align: center;
   margin: 0 auto;
 }
@@ -53,13 +49,26 @@ main {
   align-items: center;
   display: flex;
 }
-#graphic {
-  width: 340px;
-  height: 340px;
+.circle {
+  width: 450px;
+  height: 450px;
   text-align: center;
-  border: 60px solid red;
   border-radius: 50%;
+  background: conic-gradient(green 0% 0%, red 0% 100%);
+  position: relative;
 }
+#help-css {
+  translate: 17% 17%;
+  position: absolute;
+  width: 75%;
+  height: 75%;
+  border-radius: 50%;
+  z-index: 2;
+  background-image: url(/assets/image/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 #correct-answers,
 #wrong-answers {
   font-size: 3.5em;
@@ -81,8 +90,8 @@ main {
   font-weight: 300;
 }
 .div-graphics {
-  padding: 0.8em;
-  margin: 15% 0 auto 0;
+  padding: 1.5em;
+  margin: 10% 0 auto 0;
 }
 .percent {
   font-size: 1.2em;
@@ -105,9 +114,6 @@ main {
   display: block;
   padding: 0 1em;
   line-height: 1.5em;
-}
-.certificate span {
-  display: block;
 }
 
 footer {

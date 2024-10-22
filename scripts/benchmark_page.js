@@ -174,6 +174,11 @@ let costruttore_domande = function (indice) {
     console.log(all_correct_answer);
 
     result_button.addEventListener("click", () => {
+      localStorage.setItem(
+        "all_correct_answer",
+        JSON.stringify(all_correct_answer)
+      );
+      localStorage.setItem("user_answer", JSON.stringify(user_answer));
       window.location.href = "./result_page.html";
     });
     return;
@@ -224,20 +229,11 @@ let costruttore_domande = function (indice) {
     div_questions.appendChild(button);
   }
 
-  for (let j = 0; j < all_answers.length; j++) {
-    let button = document.createElement("button");
-    button.classList.add("button_domande");
-    button.addEventListener("click", () => {
-      deselezione_button();
-      button.classList.add("selected_button_domande");
-      selected_aswer = all_answers[j];
-    });
-    button.textContent = `${all_answers[j]}`;
-    buttons.push(button);
-    div_questions.appendChild(button);
-  }
-
   section_html_domande.appendChild(div_questions);
+
+  const next_button = document.createElement("button");
+  next_button.id = "next_button";
+  next_button.textContent = "NEXT";
 
   next_button.addEventListener("click", () => {
     mostra_risultato();
@@ -246,11 +242,6 @@ let costruttore_domande = function (indice) {
       clearInterval(interval);
       costruttore_domande(indice + 1);
     }, 1000);
-  });
-
-  next_button.addEventListener("click", () => {
-    user_answer.push(selected_aswer);
-    costruttore_domande(indice + 1);
   });
 
   section_html_domande.appendChild(next_button);

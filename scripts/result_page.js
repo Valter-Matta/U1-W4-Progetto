@@ -71,7 +71,7 @@ const animateCircle = (duration) => {
     const currentRightPercent = (rightPercent * progress) / 100
     const currentWrongPercent = 100 - currentRightPercent
 
-    divCircle.style.background = `conic-gradient(#C2128D 0% ${currentWrongPercent}%,#00FFFF ${currentRightPercent}% 100%)`
+    divCircle.style.background = `conic-gradient(#C2128D 0% ${currentWrongPercent}%,#00FFFF ${currentWrongPercent}% 100%)`
 
     if (progress >= 100) {
       clearInterval(interval) // Ferma l'animazione quando arriva al 100%

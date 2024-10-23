@@ -1,54 +1,29 @@
-/* // <uniquifier>: Use a unique and descriptive class name */
-/* // <weight>: Use a value from 100 to 900 */
-
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Palanquin+Dark:wght@400;500;600;700&display=swap');
-
-body {
-  font-family: 'Inter', sans-serif;
-  background-image: url('/assets/image/bg.jpg');
-  background-repeat: no-repeat;
-  max-width: 1920px;
-  max-height: 1080px;
-  background-size: cover;
-  color: #e7e7eb;
-}
-.big-container {
-  width: 80%;
-  height: 50%;
-  margin: 0em auto;
-}
-
-.logo-container {
-  width: 100%;
-  margin: 2vw auto;
-}
-header img {
-  width: 20%;
-  padding-top: 2vw;
-  padding-left: 3vw;
-}
 #title-container {
-  font-family: 'Outfit', sans-serif;
+  font-family: "Outfit", sans-serif;
   text-align: center;
-  margin: 0 auto;
+  margin-top: 4%;
 }
 #title-container h1 {
-  font-size: 3em;
+  font-size: 3.5rem;
   font-weight: 700;
-  margin-bottom: 0.3em;
+  margin-bottom: 0.8rem;
 }
+
 #title-container p {
-  font-size: 1.5em;
+  font-size: 2rem;
   font-weight: 300;
 }
+
 main {
+  font-family: "Inter", sans-serif;
   margin-top: 4vw;
-  display: inline-block;
-  width: 100%;
-  justify-content: space-between;
-  align-items: center;
   display: flex;
+  width: 100%;
+  margin-top: 4%;
+  justify-content: center;
+  align-items: center;
 }
+
 .circle {
   width: 450px;
   height: 450px;
@@ -76,26 +51,39 @@ main {
   padding: 1.2em 1em;
 }
 #correct-answers {
-  text-align: start;
+  margin-right: 5%;
+  background-color: #00ffffda;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px 12px rgba(0, 255, 255, 0.4);
+  text-align: center;
+  font-weight: 500;
 }
 #wrong-answers {
-  text-align: end;
+  margin-left: 5%;
+  background-color: #d20094;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px 12px rgba(212, 0, 255, 0.4);
+  text-align: center;
+  font-weight: 500;
 }
 #percent {
-  font-size: 1.3em;
-  font-weight: 700;
+  font-size: 1.3rem;
+  font-weight: 800;
 }
 .quest-number {
   font-size: 0.4em;
-  font-weight: 300;
+  margin-top: 2%;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
 }
 .div-graphics {
-  padding: 1.5em;
+  padding: 1.5rem;
   margin: 10% 0 auto 0;
 }
 .percent {
   font-size: 1.2em;
   font-weight: 700;
+  margin-top: 2%;
 }
 #result {
   font-size: 1.5em;
@@ -110,7 +98,6 @@ main {
 }
 .certificate {
   font-size: 1.1em;
-  /* margin-bottom: 3em; */
   display: block;
   padding: 0 1em;
   line-height: 1.5em;
@@ -126,8 +113,8 @@ footer button {
   height: 60px;
   background-color: transparent;
   color: #ffffff;
-  border: 2px solid #ffffff;
-  font-size: 1.22em;
+  border: 3px solid #ffffff;
+  font-size: 1.5rem;
   font-weight: 700;
 }
 footer button:hover {

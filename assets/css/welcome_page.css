@@ -1,128 +1,117 @@
-body{
-    width: 100%;
-    height: auto;
-    background-image: url(/assets/image/bg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+main {
+  margin-left: 10%;
+  margin-top: 5%;
 }
 
-header{
-    width: 100%;
-    height: 100px;
-    align-content: center;
+h1 {
+  font-size: 5rem;
+  color: white;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
-.logoEpicode{
-    width: 200px;
-    height: 80px;
-    background-image: url(/assets/image/epicode_logo.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-left: 100px;
+.bold {
+  font-weight: 800;
+  margin-bottom: 40px;
 }
 
-main{
-    margin-left: 30%;
-    padding-top: 40px;
-
+h4 {
+  font-size: 3rem;
+  color: #c2128d;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 600;
+  margin-bottom: 2rem;
 }
 
-h1{
-    font-size: 60px;
-    color: white;
-    font-family: "Outfit", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
+p {
+  font-size: 1.4rem;
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  margin-bottom: 2.5rem;
+  line-height: 1.3em;
 }
 
-.bold{
-    font-weight: 800;
-    margin-bottom: 40px;
+ul {
+  font-size: 1.5rem;
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  list-style: disc;
+  margin-left: 20px;
+  line-height: 1.8em;
+  margin-bottom: 120px;
 }
 
-h4{
-    font-size: 30px;
-    color: #C2128D;
-    font-family: "Outfit", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-weight: 600;
-    margin-bottom: 15px;
+.row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
-p{
-    font-size: 16px;
-    color: white;
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-weight: 200;
-    margin-bottom:20px;
-    line-height: 1.3em
+#checkbox {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 5px;
+  border: 5px solid rgb(255, 255, 255);
 }
 
-ul{
-    font-size: 16px;
-    color: white;
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-weight: 200;
-    list-style: disc;
-    margin-left: 20px;
-    line-height: 1.8em;
-    margin-bottom: 120px;
+.condizioni {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: italic;
+  font-weight: 400;
+  margin-left: 2rem;
+  margin-bottom: 0px;
+  font-size: 1.2rem;
+  color: white;
 }
 
-.article{
-    width: 500px;
-    height: 25px;
-    margin-right: 50px;
-    display: inline-block;
+.spento {
+  width: 125px;
+  height: 45px;
+  box-shadow: 10px 15px 8px -9px #00ffff;
+  background: linear-gradient(to bottom, #ffffff00 5%, #ffffff00 100%);
+  border-radius: 10px;
+  border: 2px solid #ffffff96;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.5rem;
+  text-shadow: -5px 2px 11px #ebebebe0;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 600;
 }
 
-.checkbox{
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
-    display: inline-block;
-    border: 2px solid rgb(255, 255, 255);
+.acceso {
+  background-color: #00ffff;
+  box-shadow: 0px 0px 20px 12px rgba(0, 255, 255, 0.4);
+  width: 125px;
+  height: 45px;
+  border-radius: 10px;
+  border: 2px solid #ffffff96;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.5rem;
+  text-shadow: -5px 2px 11px #ebebebe0;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 600;
 }
 
-.condizioni{
-    font-size: 16px;
-    color: white;
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-weight: 200;
-    display: inline-block;
-}
-
-.spento{
-    width: 125px;
-    height: 45px;
-    background-color: #9da3a3; 
-    border: none;
-    font-size: 20px;
-    color: black;
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-weight: 600;
-}
-
-.acceso{
-    width: 125px;
-    height: 45px;
-    background-color: #00ffff; 
-    box-shadow: 0px 0px 20px 12px rgba(0,255,255,0.4);
-    border: none;
-    font-size: 20px;
-    color: black;
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-weight: 600;
+#bottone {
+  margin-left: 3rem;
+  border-radius: 5px;
+  font-family: "Inter", sans-serif;
 }

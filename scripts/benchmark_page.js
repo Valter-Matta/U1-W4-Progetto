@@ -108,7 +108,7 @@ let user_answer = [];
 let interval;
 
 let costruttore_domande = function (indice) {
-  const duration = 6;
+  const duration = 10;
   let remainingTime = duration;
 
   const timerElement = document.getElementById("seconds");
@@ -140,7 +140,7 @@ let costruttore_domande = function (indice) {
         setProgress(progressPercent);
         remainingTime--;
       } else {
-        // mostra_risultato();
+        mostra_risultato();
         user_answer.push(selected_answer);
 
         if (!selected_answer) {
@@ -186,6 +186,7 @@ let costruttore_domande = function (indice) {
 
   const h1 = document.createElement("h1");
   h1.textContent = `${questions[indice].question}`;
+  console.log(h1);
   section_html_domande.appendChild(h1);
 
   let div_questions = document.createElement("div");
@@ -247,9 +248,13 @@ let costruttore_domande = function (indice) {
   section_html_domande.appendChild(next_button);
 
   const paragraph_questions = document.createElement("p");
-  paragraph_questions.textContent = `QUESTION ${indice + 1} / ${
-    questions.length
-  }`;
+  const span_questions = document.createElement("span");
+
+  span_questions.id = "span_questions";
+  span_questions.innerText = questions.length;
+
+  paragraph_questions.innerHTML = `QUESTION  ${indice + 1}  / `;
+  paragraph_questions.appendChild(span_questions);
   section_html_domande.appendChild(paragraph_questions);
 
   startCountdown();
@@ -264,13 +269,15 @@ let costruttore_domande = function (indice) {
       const selected_button = buttons.find(
         (btn) => btn.textContent === selected_answer
       );
-      selected_button.style.color = "red";
-
+      if (selected_button) {
+        selected_button.style.color = "red";
+      }
       const correctButton = buttons.find(
         (btn) => btn.textContent === all_correct_answer[indice]
       );
       if (correctButton) {
         correctButton.style.color = "green";
+        correctButton.style.fontWeight = "bold";
       }
     }
   };

@@ -44,8 +44,8 @@ certified.innerText = completeRate(
 
 const sx = document.getElementById('right')
 const dx = document.getElementById('wrong')
-sx.innerText = `${countAnswers()} / ${totalQuestions.length} `
-dx.innerText = `${totalQuestions.length - countAnswers()}/10`
+sx.innerText = `${countAnswers()} / ${totalQuestions.length} Questions `
+dx.innerText = `${totalQuestions.length - countAnswers()}/10 Questions`
 
 const percRightAnswers = document.getElementById('win') //%
 const percWrongAnswers = document.getElementById('lose') //%

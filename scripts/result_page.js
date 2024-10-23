@@ -17,7 +17,6 @@ const countAnswers = function () {
   }
   return totalUserCorrectAnswers
 }
-console.log(countAnswers())
 
 const completeRate = (succes, fail) => {
   let result = ''
@@ -31,9 +30,9 @@ const completeRate = (succes, fail) => {
 
 esito.innerText = completeRate('Congratulations', 'Failed')
 
-passed.innerText = completeRate(
+passed.innerHTML = completeRate(
   'You Passed the exam',
-  'Sorry, you did not pass the exam.'
+  '<span>Sorry, you did not pass the exam.</span>'
 )
 
 certified.innerText = completeRate(
@@ -55,17 +54,34 @@ percRightAnswers.innerText = `${
 }%`
 percWrongAnswers.innerText = `${100 - countAnswers() * 10}%`
 
-const wrongPercent = `${100 - countAnswers() * 10}%`
-const rightPercent = `${(countAnswers() / totalQuestions.length) * 100}%`
+const rightPercent = `${(countAnswers() / totalQuestions.length) * 100}`
+const wrongPercent = 100 - countAnswers() * 10
 console.log(wrongPercent)
 console.log(rightPercent)
 
 // div cerchio percentuale
-const divCircle = document.getElementById('graphic') //cerchio
-// divCircle.style.background = `conic-gradient(#C2128D 0% ${wrongPercent}, #00FFFF ${rightPercent} 100%)`
-divCircle.style.background = `conic-gradient(#C2128D 0% ${wrongPercent}, #00FFFF ${wrongPercent} 100%)`
+const animateCircle = (duration) => {
+  const divCircle = document.getElementById('graphic')
+  let progress = 0
+  const step = 1 // Incremento del progresso
+  const intervalDuration = duration / 100 // Intervallo per aggiornamento
+
+  const interval = setInterval(() => {
+    progress += step
+    const currentRightPercent = (rightPercent * progress) / 100
+    const currentWrongPercent = 100 - currentRightPercent
+
+    divCircle.style.background = `conic-gradient(#C2128D 0% ${currentWrongPercent}%,#00FFFF ${currentRightPercent}% 100%)`
+
+    if (progress >= 100) {
+      clearInterval(interval) // Ferma l'animazione quando arriva al 100%
+    }
+  }, intervalDuration)
+}
+animateCircle(3000)
 
 const button = document.getElementById('rate-us')
 button.addEventListener('click', () => {
   window.location.href = './feedback_page.html'
 })
+// `conic-gradient(from 0deg, #C2128D 0% ${progress * 0.5}, #00FFFF ${progress * 0.5} 100%)`

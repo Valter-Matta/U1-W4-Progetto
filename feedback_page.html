@@ -40,13 +40,16 @@
           <span class="star"><i class="fas fa-star"></i></span>
         </div>
         <h3>Leave us an open feedback about your experience so far</h3>
-        <input id="color" type="text" placeholder="Write your comment here" />
+        <textarea
+          id="color"
+          maxlength="400"
+          type="textarea"
+          placeholder="Write your comment here !"
+        ></textarea>
       </form>
     </main>
     <footer>
-      <form class="invio">
-        <button type="submit" onclick="invia">MORE INFO</button>
-      </form>
+      <button id="button" type="submit" onclick="invia">MORE INFO</button>
     </footer>
     <script src="/scripts/feedback_page.js"></script>
   </body>

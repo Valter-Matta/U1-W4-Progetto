@@ -16,22 +16,20 @@
 
 main {
   font-family: 'Inter', sans-serif;
-  margin-top: 4vw;
-  margin-bottom: 4vw;
   display: flex;
   width: 100%;
-  margin-top: 4%;
   justify-content: center;
   align-items: center;
 }
 
 .circle {
+  box-shadow: 0px 0px 20px 12px rgba(255, 255, 255, 0.288);
   width: 450px;
   height: 450px;
   text-align: center;
   border-radius: 50%;
-
   position: relative;
+  margin: 4% 6%;
 }
 
 #help-css {
@@ -48,11 +46,10 @@ main {
 #correct-answers,
 #wrong-answers {
   font-size: 3.5em;
-  width: 25%;
+  width: 18%;
   padding: 1.2em 1em;
 }
 #correct-answers {
-  margin-right: 5%;
   background-color: #00ffffda;
   border-radius: 20px;
   box-shadow: 0px 0px 20px 12px rgba(0, 255, 255, 0.4);
@@ -60,7 +57,6 @@ main {
   font-weight: 500;
 }
 #wrong-answers {
-  margin-left: 5%;
   background-color: #d20094;
   border-radius: 20px;
   box-shadow: 0px 0px 20px 12px rgba(212, 0, 255, 0.4);
@@ -111,23 +107,28 @@ main {
 
 footer {
   text-align: center;
-  margin: 2em auto;
 }
 footer button {
-  margin-top: 2em;
   width: 250px;
   height: 60px;
-  background-color: transparent;
-  color: #ffffff;
-  border: 3px solid #ffffff;
-  font-size: 1.5rem;
+  border: none;
+  width: 12rem;
+  height: 4rem;
+  font-family: "Outfit", sans-serif;
+  border: 3px solid #ffffff96;
   font-weight: 700;
+  font-style: normal;
+  font-size: 1.3rem;
+  box-shadow: 10px 15px 8px -9px #00ffff;
+  background: linear-gradient(to bottom, #ffffff00 5%, #ffffff00 100%);
+  color: #ffffff;
+  border-radius: 5px;
 }
+
+
 footer button:hover {
-  scale: 1.05;
-  -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000,
-    5px 5px 15px 5px rgba(0, 0, 0, 0);
-  box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000,
-    5px 5px 15px 5px rgba(0, 0, 0, 0);
-  transition: 0.5s;
+  color: #000000;
+  box-shadow: 1px 1px 15px 3px #00ffff;
+  background-color: #00ffff;
+  /* transition: 0.5s; */
 }

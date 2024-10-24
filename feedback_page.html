@@ -23,9 +23,17 @@
       <img src="/assets/image/epicode_logo.png" alt="logo_epicode" />
     </header>
     <main>
-      <h1>Tell us how it's going</h1>
-      <h2>From 0 to 10, how likely are you to recommend EPICODE</h2>
-      <p>to a friend or a colleague?</p>
+      <h1 class="martino">Tell us how it's going</h1>
+      <h2 class="martino">
+        From 0 to 10, how likely are you to recommend EPICODE
+      </h2>
+      <img
+        class="martino"
+        id="martino"
+        src="/assets/image/martino_ascolta.jpg"
+        alt="martino_ascolta"
+      />
+      <p class="martino">to a friend or a colleague?</p>
       <form class="invio">
         <div id="stelline">
           <span class="star"><i class="fas fa-star"></i></span>
@@ -39,9 +47,12 @@
           <span class="star"><i class="fas fa-star"></i></span>
           <span class="star"><i class="fas fa-star"></i></span>
         </div>
-        <h3>Leave us an open feedback about your experience so far</h3>
+        <h3 class="martino">
+          Leave us an open feedback about your experience so far
+        </h3>
         <textarea
           id="color"
+          class="martino"
           maxlength="400"
           type="textarea"
           placeholder="Write your comment here !"
@@ -49,7 +60,9 @@
       </form>
     </main>
     <footer>
-      <button id="button" type="submit" onclick="invia">MORE INFO</button>
+      <button id="button" class="martino" type="submit" onclick="invia">
+        MORE INFO
+      </button>
     </footer>
     <script src="/scripts/feedback_page.js"></script>
   </body>

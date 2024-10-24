@@ -58,6 +58,7 @@ button {
   background: linear-gradient(to bottom, #ffffff00 5%, #ffffff00 100%);
   color: #ffffff;
   border-radius: 5px;
+  margin-bottom: 5vw;
 }
 
 button:hover {
@@ -97,4 +98,11 @@ textarea:focus {
 
 textarea:hover {
   border-color: #888;
+}
+
+#martino {
+  margin-top: 1vw;
+  border-radius: 40px;
+  width: 25%;
+  height: 520px;
 }

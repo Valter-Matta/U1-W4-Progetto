@@ -125,6 +125,11 @@ footer button {
   border-radius: 5px;
 }
 
+.martino-semprebello{
+  border-radius: 120px;
+  width: 102%;
+  transform: translateY(-20%);
+}
 
 footer button:hover {
   color: #000000;

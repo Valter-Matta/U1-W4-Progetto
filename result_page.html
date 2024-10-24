@@ -13,35 +13,43 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/assets/css/result_page.css" />
+    <link rel="icon" href="/assets/favicon.png" type="image/png" />
   </head>
   <body>
     <header>
       <img src="/assets/image/epicode_logo.png" alt="logo_epicode" />
       <div id="title-container">
-        <h1>Results</h1>
+        <h1 id="h1-risultati">Results</h1>
         <p class="summary">The summary of your answers:</p>
       </div>
     </header>
     <main>
       <div id="correct-answers">
-        Correct
+        <h1 id="h1-correct">Correct</h1>
         <p class="percent" id="win">xx%</p>
         <p class="quest-number" id="right">4/6 questions</p>
       </div>
       <div class="circle" id="graphic">
         <div id="help-css">
           <div class="div-graphics">
-            <h3 id="result">Congratulations</h3>
-            <p id="passed">You passed the exam</p>
-            <p class="certificate" id="certified">
-              We'll send you the certificate in few minutes. Check your email
-              (including premotions / spam folder)
-            </p>
+            <div id="contenitore-serio">
+              <h3 id="result">Congratulations</h3>
+              <p id="passed">You passed the exam</p>
+              <p class="certificate" id="certified">
+                We'll send you the certificate in few minutes. Check your email
+                (including premotions / spam folder)
+              </p>
+            </div>
+            <img
+              class="martino-semprebello"
+              src="/assets/image/Foto_martino.jpg"
+              alt="Martino_bello"
+            />
           </div>
         </div>
       </div>
       <div id="wrong-answers">
-        Wrong
+        <h1 id="h1-wrong">Wrong</h1>
         <p class="percent" id="lose">xx%</p>
         <p class="quest-number" id="wrong">4/6 questions</p>
       </div>

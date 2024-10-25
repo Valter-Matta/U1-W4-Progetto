@@ -45,6 +45,9 @@ certified.innerText = completeRate(
   "Check the sections of the quiz where you had the most difficulty and go over the study material again."
 );
 
+const martino_img = document.getElementsByClassName("martino-semprebello");
+martino_img[0].style.display = "none";
+
 // MARTINO MEME
 if (selectedDifficulty == "hard") {
   const h1_risultati = document.getElementById("h1-risultati");
@@ -53,7 +56,7 @@ if (selectedDifficulty == "hard") {
   const h1_wrong = document.getElementById("h1-wrong");
   const contaniner = document.getElementById("contenitore-serio");
   const parla_martino = document.getElementById("rate-us");
-
+  martino_img[0].style.display = "block";
   h1_risultati.innerText = "MARTINO BRUNDO IL KING";
   sotto_risultato[0].innerText = "Dopo aver risposto alla domande su di lui...";
   h1_correct.innerText = "Ti ama !";

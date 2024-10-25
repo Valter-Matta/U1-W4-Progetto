@@ -19,14 +19,14 @@ const selectedDifficulty = JSON.parse(
 );
 
 const classe_martino = document.getElementsByClassName("martino");
-classe_martino[2].style.visibility = "hidden";
+classe_martino[2].style.display = "none";
 
 if (selectedDifficulty === "hard") {
   const classe_martino = document.getElementsByClassName("martino");
   classe_martino[0].innerText = "PARLA CON MARTINO LUI ASCOLTA...";
   classe_martino[1].innerText =
     "DIVENTA COME LUI ! NESSUNO TI FA SENTIRE CULLATO COME LUI !";
-  classe_martino[2].style.visibility = "visible";
+  classe_martino[2].style.display = "inline";
   classe_martino[3].innerText =
     "Metti una stella per il tuo ' PIU' CHE AMICO ' Martino";
   classe_martino[4].innerText =

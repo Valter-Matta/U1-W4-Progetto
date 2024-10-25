@@ -57,7 +57,7 @@ if (selectedDifficulty == "hard") {
   const contaniner = document.getElementById("contenitore-serio");
   const parla_martino = document.getElementById("rate-us");
   martino_img[0].style.display = "block";
-  h1_risultati.innerText = "MARTINO BRUNDO IL KING";
+  h1_risultati.innerText = "MARTINO BRUNDU IL KING";
   sotto_risultato[0].innerText = "Dopo aver risposto alla domande su di lui...";
   h1_correct.innerText = "Ti ama !";
   h1_wrong.innerText = "Ti odia !";

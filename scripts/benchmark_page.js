@@ -398,10 +398,18 @@ const questionsHard = [
 
 const meme = document.getElementById("meme_cage");
 
-let benchmarkfunction = function (questions) {
+const music_appluasi = document.getElementById("applausi");
+const music_1 = document.getElementById("franzu");
+const music_2 = document.getElementById("martin_music");
+const music_3 = document.getElementById("valter");
+
+music_appluasi.pause();
+
+let benchmarkfunction = function (questions, duration) {
   let section_html_domande = document.getElementById("domande");
 
   let indice = 0;
+  let intern_duration = duration;
 
   let all_correct_answer = [];
 
@@ -413,9 +421,8 @@ let benchmarkfunction = function (questions) {
   let interval;
 
   let costruttore_domande = function (indice) {
-    
-    const duration = 15;
-    let remainingTime = duration;
+    // const duration = 15;
+    let remainingTime = intern_duration;
 
     const timerElement = document.getElementById("seconds");
     const circle = document.querySelector(".progress-ring-circle");
@@ -434,7 +441,7 @@ let benchmarkfunction = function (questions) {
 
     function startCountdown() {
       clearInterval(interval);
-      remainingTime = duration;
+      remainingTime = intern_duration;
       timerElement.textContent = remainingTime;
 
       setProgress(100);
@@ -442,7 +449,7 @@ let benchmarkfunction = function (questions) {
       interval = setInterval(() => {
         if (remainingTime >= 0) {
           timerElement.textContent = remainingTime;
-          const progressPercent = (remainingTime / duration) * 100;
+          const progressPercent = (remainingTime / intern_duration) * 100;
           setProgress(progressPercent);
           remainingTime--;
         } else {
@@ -479,6 +486,14 @@ let benchmarkfunction = function (questions) {
       section_html_domande.appendChild(result_button);
       console.log(user_answer);
       console.log(all_correct_answer);
+
+      music_appluasi.play();
+
+      setTimeout(() => {
+        music_1.pause();
+        music_2.pause();
+        music_3.pause();
+      }, 1000);
 
       result_button.addEventListener("click", () => {
         localStorage.setItem(
@@ -596,7 +611,7 @@ let benchmarkfunction = function (questions) {
     };
   };
 
-  costruttore_domande(indice);
+  costruttore_domande(indice, duration);
 };
 
 const selectedDifficulty = JSON.parse(
@@ -606,9 +621,24 @@ const selectedDifficulty = JSON.parse(
 console.log(selectedDifficulty);
 
 if (selectedDifficulty == "easy") {
-  benchmarkfunction(questions);
+  const duration = 15;
+
+  music_1.pause();
+  music_2.pause();
+
+  benchmarkfunction(questions, duration);
 } else if (selectedDifficulty === "medium") {
-  benchmarkfunction(questionsPopCulture);
+  const duration = 20;
+
+  music_2.pause();
+  music_3.pause();
+
+  benchmarkfunction(questionsPopCulture, duration);
 } else {
-  benchmarkfunction(questionsHard);
+  const duration = 25;
+
+  music_1.pause();
+  music_3.pause();
+
+  benchmarkfunction(questionsHard, duration);
 }
